@@ -244,8 +244,8 @@ function handshake()
       // if the globalUserName value is set we need to tell the server and the client about the new authorname
       if (globalUserName !== false)
       {
-        pad.notifyChangeName(globalUserName); // Notifies the server
-	pad.myUserInfo.name = globalUserName;
+       	pad.notifyChangeName(globalUserName); // Notifies the server
+        pad.myUserInfo.name = globalUserName;
         $('#myusernameedit').attr({"value":globalUserName}); // Updates the current users UI
       }
     }
